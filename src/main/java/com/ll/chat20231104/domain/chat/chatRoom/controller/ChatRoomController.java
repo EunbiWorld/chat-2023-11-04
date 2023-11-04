@@ -17,18 +17,8 @@ public class ChatRoomController {
     }
 
     @GetMapping("/make") // get 방식의 통신
-    @ResponseBody // 메소드 실행
     public String showMake() {
-        return """
-                <form action="">
-                    <div>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <input type="submit">
-                    </div>
-                </form>
-                """;
+        return "domain/chat/chatRoom/make";
     }
 }
 
